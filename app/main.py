@@ -23,7 +23,7 @@ class user_interface:
 
     def tab_main(self):
 
-        image = Image.open(os.path.join("chicken.png"))
+        image = Image.open(os.path.join("chicken.jpg"))
         st.image(image)
 
         st.markdown("# Krismer Hendl Bestellungen")
