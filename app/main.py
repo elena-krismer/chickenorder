@@ -24,7 +24,6 @@ class user_interface:
     def tab_main(self):
 
         image = Image.open(os.path.join("chicken.jpg"))
-        #st.image(image, width=1)
 
         st.markdown("# Krismer Hendl Bestellungen")
         self.quartal = st.selectbox("Quartal", options= ["2022_Q4"])
@@ -37,6 +36,7 @@ class user_interface:
        
         st.markdown("Neue Bestellung")
         self.neue_bestellung()
+        st.image(image)
     
     def neue_bestellung(self):
         with st.form("bestellung"):
